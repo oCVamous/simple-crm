@@ -27,10 +27,7 @@ import { FormsModule } from '@angular/forms';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
-
-
-
-
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -54,6 +51,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatDatepickerModule,
     MatNativeDateModule,
     FormsModule,
+    MatCardModule,
     MatProgressBarModule,
     AngularFirestoreModule,
     AngularFireModule.initializeApp(environment.firebase),
