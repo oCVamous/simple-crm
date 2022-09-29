@@ -6,6 +6,7 @@ export class User {
     zipCode!: number;
     city!: string;
     email!: string;
+  static customIdName: any;
 
     constructor(obj?: any) {
         
