@@ -29,6 +29,7 @@ export class DialogAddUserComponent implements OnInit {
     console.log('Current user is', this.user);
 
     this.loading = true;
+    console.log(this.loading);
 
     this.firestore
     .collection('users')
@@ -36,6 +37,7 @@ export class DialogAddUserComponent implements OnInit {
     .then((result:any)=> {
       console.log('Adding user fisnished', result);
       this.loading = false;
+      console.log(this.loading);
     })
   }
 
