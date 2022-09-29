@@ -26,6 +26,7 @@ import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config
 import { FormsModule } from '@angular/forms';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 
@@ -53,6 +54,7 @@ import { AngularFireModule } from '@angular/fire/compat';
     MatDatepickerModule,
     MatNativeDateModule,
     FormsModule,
+    MatProgressBarModule,
     AngularFirestoreModule,
     AngularFireModule.initializeApp(environment.firebase),
     provideFirebaseApp(() => initializeApp(environment.firebase)),

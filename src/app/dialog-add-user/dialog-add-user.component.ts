@@ -3,6 +3,7 @@ import { User } from 'src/app/models/user.class';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 
+
 @Component({
   selector: 'app-dialog-add-user',
   templateUrl: './dialog-add-user.component.html',
@@ -11,6 +12,11 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 export class DialogAddUserComponent implements OnInit {
   user: User = new User(); 
   birthDate!: Date;
+
+  color = 'primary';
+  mode: any = 'indeterminate';
+  value = 50;
+  bufferValue = 75;
 
   constructor(private firestore: AngularFirestore) { }
 

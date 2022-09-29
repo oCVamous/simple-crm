@@ -1,3 +1,12 @@
+<div class="dialog-container">
+<mat-progress-bar
+          class="example-margin"
+          [color]="color"
+          [mode]="mode"
+          [value]="value"
+          [bufferValue]="bufferValue">
+</mat-progress-bar>
+
 <h1 mat-dialog-title>Add User</h1>
 <div mat-dialog-content>
     <div>
@@ -49,4 +58,6 @@
 <div mat-dialog-actions>
   <button mat-button >Cancel</button>
   <button mat-button [mat-dialog-close]="" cdkFocusInitial (click)="saveUser()">Save</button>
+</div>
+
 </div>
